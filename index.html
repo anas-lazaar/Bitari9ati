@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بطريقتي | مطعم الدجاج والساندويشات</title>
+    <meta
+      name="description"
+      content="مطعم بطريقتي - نقدم أطباق الدجاج الطازج والساندويشات والتاكوس بطعم أصيل ومميز. طازج، نظيف، ولذيذ."
+    />
+    <meta
+      name="keywords"
+      content="مطعم, دجاج, ساندويشات, تاكوس, طعام طازج, الرياض"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-content">
+          <!-- Navigation: Contact only -->
+          <nav class="nav">
+            <a href="#contact" class="nav-link">اتصل بنا</a>
+          </nav>
+          <!-- Logo (Arabic only) -->
+          <div class="logo">
+            <a href="#"><h1>بطريقتي</h1></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">بطريقتي</h1>
+        <p class="hero-subtitle">طازج، نظيف، ولذيذ</p>
+        <p class="hero-subtitle-en">Fresh, Clean, and Delicious</p>
+        <button class="hero-btn" onclick="scrollToMenu()">عرض القائمة</button>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">قائمتنا</h2>
+          <p class="section-description">
+            اختر من تشكيلة متنوعة من الأطباق الشهية
+          </p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+          <button class="tab-btn active" onclick="showCategory('chicken')">
+            دجاج
+          </button>
+          <button class="tab-btn" onclick="showCategory('sandwiches')">
+            ساندويشات
+          </button>
+          <button class="tab-btn" onclick="showCategory('tacos')">تاكوس</button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-grid" id="menu-items"></div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">لماذا تختارنا؟</h2>
+          <p class="section-description">
+            نستخدم الدجاج الطازج والنظيف والمكونات الطبيعية لتحضير الساندويشات
+            والتاكوس بطعم أصيل ومميز
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img
+                src="assets/fresh.png"
+                alt="مكونات طازجة"
+                width="128"
+                height="128"
+              />
+            </div>
+            <h3 class="feature-title">مكونات طازجة</h3>
+            <p class="feature-description">
+              نستخدم أجود أنواع الخضار والدجاج الطازج
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img
+                src="assets/clean.png"
+                alt="مطبخ نظيف"
+                width="128"
+                height="128"
+              />
+            </div>
+            <h3 class="feature-title">مطبخ نظيف</h3>
+            <p class="feature-description">
+              نحافظ على أعلى معايير النظافة والجودة
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img
+                src="assets/tasty.png"
+                alt="طعم رائع"
+                width="128"
+                height="128"
+              />
+            </div>
+            <h3 class="feature-title">طعم رائع</h3>
+            <p class="feature-description">
+              نحضر أطباقنا بحب وخبرة لضمان أفضل طعم
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (in-page) -->
+    <main class="contact-main" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">اتصل بنا</h1>
+          <p class="section-description">نحن هنا للإجابة على جميع استفساراتك</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="info-card">
+              <h3 class="info-title">معلومات التواصل</h3>
+
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-content">
+                  <h4>العنوان</h4>
+                  <p>قنيطرة بير الرامي</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">📞</div>
+                <div class="info-content">
+                  <h4>الهاتف</h4>
+                  <a href="tel:+212675520429" class="phone-link">0675520429</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">🕐</div>
+                <div class="info-content">
+                  <h4>ساعات العمل</h4>
+                  <p>كل أيام الأسبوع</p>
+                  <p class="hours">من 12 صباحًا إلى 12 مساءً</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-container">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3298.3086206912158!2d-6.6145494!3d34.2406678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda75b005e1a6f59%3A0x1b068810d702fc86!2zU25hY2sgQml0YXJpa2F0aSDYs9mG2KfZgyDYqNi32LHZitmC2KrZig!5e0!3m2!1sen!2sma!4v1754853245123!5m2!1sen!2sma"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="موقع المطعم"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Social links removed -->
+          <div class="copyright">© 2025 بطريقتي - جميع الحقوق محفوظة</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
